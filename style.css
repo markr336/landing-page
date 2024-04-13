@@ -1,0 +1,217 @@
+/* Standard Sizes:
+    Buttons: 
+        - padding: 8px 16px;
+        - border-radius: 8px;
+    
+*/
+
+
+/* 
+1. Outline is used to highlight the containers
+2. Margin & Padding set to 0 */
+
+* {
+    /*outline: 2px solid red;*/
+    margin: 0;
+    padding: 0;
+}
+
+/* Min-width is used for the entire body. It's a quick
+fix for elements/text overflowing as it introduces a scrollbar
+at the bottom. */
+body {
+    min-width: 1100px;
+}
+
+/* By default the sections are displayed as blocks */
+
+/* Section 1 */
+    /* Header */
+.section1 {
+    background-color: #1f2937;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 240px;
+    gap: 32px;
+}
+
+.logo{
+    color: #f9faf8;
+    font-size: 24px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 32px;
+}
+
+li,
+p {
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+/* Padding adjusts the size of the container */
+.hero {
+    padding: 96px 240px;  
+}
+
+/* Height is specified here but not width as the justify-content
+won't work properly */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    height: 220px;
+}
+
+/* Height of placeholder is set at 100% of height of the parent
+container (.content). Height must be specified in the parent container
+to use perecentages. */
+.left-side,
+.right-side {
+    height: 100%;
+    width: 485px;
+}
+
+/* Aligns text (child) in the placeholder (parent) area */
+.right-side {
+    background: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Set spacing between hero elements as using flex increases
+the size of the button to fit the container */
+.main-text,
+.secondary-text {
+    margin-bottom: 16px;
+}
+
+
+
+h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8;
+}
+
+button {
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: #3882f6;
+    color: white;
+    border: none;
+}
+
+
+/* Section2 */
+/* By defalut section2 will have a white background */
+
+.title {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+    text-align: center;
+}
+
+/* Creates the squares for the images */
+.imgs {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 16px;
+    outline: 5px solid #3882f6;
+    border-radius: 10px;
+}
+
+.information {
+    padding-left: 240px;
+    padding-right: 240px;
+    padding-bottom: 96px;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.set {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Section 3 */
+.section3 {
+    padding-top: 96px;
+    padding-left: 240px;
+    padding-right: 240px;
+    padding-bottom: 96px;
+    background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote-block {
+    width: 696px;
+}
+
+.quote {
+    color: #1f2937;
+    font-size: 36px;
+}
+
+.author {
+    color: #1f2937;
+    font-weight: bolder;
+    align-self: end;
+}
+
+/* Section 4 */
+
+.section4 {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    display: flex;
+    justify-content: center;
+}
+
+.block {
+    width: 700px;
+    background-color: #3882f6;
+    padding: 48px 96px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-up {
+    border: 1px solid white;
+}
+
+.footer {
+    padding: 24px 240px;
+    background-color: #1f2937;
+    text-align: center;
+}
+
+/*
+
+
+
+*/
